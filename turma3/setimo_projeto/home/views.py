@@ -4,7 +4,6 @@ from .models import Produto
 
 def home (request):
     meus_produtos = Produto.objects.all()
-    descricao = Produto.objects.all()
 
     context = {
         'produtos': meus_produtos,
